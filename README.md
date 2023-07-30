@@ -42,9 +42,9 @@
 3. Install the required dependencies:
 
    ```bash
-   bash install.sh
+   bash rubikrecon.sh
    ```
-
+## OR
 ## Usage
 
 ```bash
