@@ -23,12 +23,12 @@ if [[ ${#missing_tools[@]} -gt 0 ]]; then
             go get -u github.com/tomnomnom/waybackurls >/dev/null 2>&1
         elif [[ $tool == "arjun" ]]; then
             go get -u github.com/s0md3v/Arjun >/dev/null 2>&1
-        elif [[ $tool == "curl"]]; then
+        elif [[ $tool == "curl" ]]; then
             sudo apt-get install curl >/dev/null 2>&1
-        elif [[ $tool == "host"]]; then
-            sudo apt-get install host >/dev/null 2>
-        elif [[ $tool == "dig"]]; then
-            sudo apt-get install digest >/dev/null 2>
+        elif [[ $tool == "host" ]]; then
+            sudo apt-get install host >/dev/null 2>&1
+        elif [[ $tool == "dig" ]]; then
+            sudo apt-get install digest >/dev/null 2>&1
         else
             go get -u "$tool" >/dev/null 2>&1
         fi
@@ -37,7 +37,6 @@ if [[ ${#missing_tools[@]} -gt 0 ]]; then
 else
     echo "All required tools are already installed."
 fi
-
 # Colors
 RED='\033[0;31m'
 GREEN='\033[0;32m'
